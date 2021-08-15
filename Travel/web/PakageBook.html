@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<HTML>
+<HEAD>
+<TITLE> Bharat Dhekho </TITLE>
+<link type="text/css" rel="stylesheet" href="style1.css">
+</HEAD>
+<BODY>
+<HEADER><CENTER>BHARAT DEKHO</CENTER></HEADER>
+<HR size="3" align="left" width="100%" color="black">
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="Contact.jsp">Contact Us</a>
+  <a href="About_us.jsp">About Us</a>
+  <div class="dropdown">
+    <button class="dropbtn">Sign In 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Login.html">User Login</a>
+      <a href="Register.html">User Registration</a>
+      <a href="Admin_login.html">Admin Login</a>
+    </div>
+  </div> 
+
+  <div class="dropdown">
+    <button class="dropbtn">Have a Look 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Goa.html">Goa Dekho</a>
+      <a href="Himachal.html">Himachal Dekho</a>
+      <a href="Kerala.html">Kerala Dekho</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Feedback/Complain 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Feedback.html">FeedBack</a>
+      <a href="Complain.html">Complain</a>
+    </div>
+  </div> 
+    <div class="dropdown">
+    <button class="dropbtn">Packages 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Adventure.jsp">Adventure Packages</a>
+      <a href="PakageBook.html">Book a Package</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Hotels
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="HotelBook.jsp">Book a Hotel</a>
+      <a href="PGrates.jsp">Prices </a>
+      <a href="hotel_faqs.jsp">FAQs about Hotels</a>
+    </div>
+  </div> 
+</div>
+<HR size="3" align="left" width="100%" color="black">
+<BR><center><b>
+        <font size="6" face="comic sans ms" color="blue">
+        Book your Package
+        </font></b></center><BR>
+        <FORM name=mainform method=post action="package.jsp">
+        <table width=500 align=center cellspacing=0 cellpadding=4>
+            <TR>
+	<TD align=right>Name&nbsp;&nbsp;:&nbsp;&nbsp;</TD>
+			<TD><input name="name" type="text" >
+		</TR>
+                            <TR>
+	<TD align=right>EMail&nbsp;&nbsp;:&nbsp;&nbsp;</TD>
+			<TD><input name="email" type="text" >
+		</TR>
+		<TR>
+			<td align=right>Package Id&nbsp;&nbsp;:&nbsp;&nbsp;</TD>
+                        <td><input name="pckgid" type="text"> </TD></TR>
+		<TR>
+			<TD align=right>Departure Date&nbsp;&nbsp;:&nbsp;&nbsp;</TD>
+			<TD><select name="sdd" id="sdd">
+<option value="1">01</option>
+<option value="2">02</option>
+<option value="3">03</option>
+<option value="4">04</option>
+<option value="5">05</option>
+<option value="6">06</option>
+<option value="7">07</option>
+<option value="8">08</option>
+<option value="9">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21" >21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+</select>
+<select name="smm" id="smm">
+<option value="1">JAN</option>
+<option value="2">FEB</option>
+<option value="3">MAR</option>
+<option value="4">APR</option>
+<option value="5">MAY</option>
+<option value="6">JUN</option>
+<option value="7">JUL</option>
+<option value="8">AUG</option>
+<option value="9">SEP</option>
+<option value="10">OCT</option>
+<option value="11">NOV</option>
+<option value="12">DEC</option>
+</select>
+<select name="syy" id="syy">
+<option value="20" >2020</option>
+<option value="21">2021</option>
+</select></TD></TR>
+		<tr><td align=right>Departure From&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+		<td><select name="source">
+<option value="ND" selected>New Delhi</option>
+<option value="KL">Kolkata</option>
+<option value="CH">Chennai</option>
+<option value="MB">Mumbai</option>
+<option value="BG">Banglore</option>
+<option value="GO">Goa</option>
+<option value="KE">Kerala</option>
+<option value="HM">Himachal</option>
+</select></td>
+		</tr>
+		<TR>
+			<TD align=right>Return Date&nbsp;&nbsp;:&nbsp;&nbsp;</TD>
+			<TD><select name="ddd" id="ddd">
+<option value="1">01</option>
+<option value="2">02</option>
+<option value="3">03</option>
+<option value="4">04</option>
+<option value="5">05</option>
+<option value="6">06</option>
+<option value="7">07</option>
+<option value="8">08</option>
+<option value="9">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+</select>
+<select name="dmm" id="dmm">
+<option value="1">JAN</option>
+<option value="2">FEB</option>
+<option value="3">MAR</option>
+<option value="4">APR</option>
+<option value="5">MAY</option>
+<option value="6">JUN</option>
+<option value="7">JUL</option>
+<option value="8">AUG</option>
+<option value="9">SEP</option>
+<option value="10">OCT</option>
+<option value="11" >NOV</option>
+<option value="12">DEC</option>
+</select>
+<select name="dyy" id="dyy">
+<option value="20">2020</option>
+<option value="21">2021</option>
+</select>
+</TR>
+<TR><Td colspan=2 align=center><input type="Submit" onclick="save();" value="Book Package">
+</TD></TR></tABLE></form>
+<br>
+<footer>
+    BEWARE OF FAKE MOBILE CALLS FROM MIDDLEMEN AND OTHER PERSONS<BR>
+    PRETENDING TO BE FROM OUR COMPANY<br>
+    [ Last Update on 22th Feburary, 2020 ]
+</footer>
+</BODY>
+<SCRIPT>
+        function save()
+        {
+            alert("Your Package has been booked!!");
+        }
+</SCRIPT>
+</HTML>

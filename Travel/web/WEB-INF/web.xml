@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Valid</servlet-name>
+        <servlet-class>Valid</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Reg_form</servlet-name>
+        <servlet-class>Reg_form</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Customer</servlet-name>
+        <servlet-class>Customer</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CustDao</servlet-name>
+        <servlet-class>CustDao</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Valid</servlet-name>
+        <url-pattern>/Valid</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Reg_form</servlet-name>
+        <url-pattern>/Reg_form</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Customer</servlet-name>
+        <url-pattern>/Customer</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CustDao</servlet-name>
+        <url-pattern>/CustDao</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

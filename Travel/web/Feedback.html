@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Feedback Form</title>
+        <link type="text/css" rel="stylesheet" href="style1.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <img src="C:\Users\Pranay Singhal\Documents\pictures\feedback1.jfif" height="160" width="180" align="left">
+        <img src="C:\Users\Pranay Singhal\Documents\pictures\feedback.png" height="160" width="180" align="right">
+        <HEADER><CENTER>BHARAT DEKHO</CENTER></HEADER>
+        <HR size="3" align="left" width="100%" color="black">
+        <div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="Contact.jsp">Contact Us</a>
+  <a href="About_us.jsp">About Us</a>
+  <div class="dropdown">
+    <button class="dropbtn">Sign In 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Login.html">User Login</a>
+      <a href="Register.html">User Registration</a>
+      <a href="Admin_login.html">Admin Login</a>
+    </div>
+  </div> 
+
+  <div class="dropdown">
+    <button class="dropbtn">Have a Look 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Goa.html">Goa Dekho</a>
+      <a href="Himachal.html">Himachal Dekho</a>
+      <a href="Kerala.html">Kerala Dekho</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Feedback/Complain 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Feedback.html">FeedBack</a>
+      <a href="Complain.html">Complain</a>
+    </div>
+  </div> 
+    <div class="dropdown">
+    <button class="dropbtn">Packages 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Adventure.jsp">Adventure Packages</a>
+      <a href="PakageBook.html">Book a Package</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Hotels
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="HotelBook.jsp">Book a Hotel</a>
+      <a href="PGrates.jsp">Prices </a>
+      <a href="hotel_faqs.jsp">FAQs about Hotels</a>
+    </div>
+  </div> 
+</div>
+<HR size="3" align="left" width="100%" color="black">
+        <h2 style="text-align: center">Feedback Form</h2> 
+        <form action="feedback.jsp" method="POST">
+            <center>
+                   <p>Please fill the detail given below !!!!</p>
+                   <table border="2" bgcolor="white" width="40%" style="color: darkred ; text-align: center">
+                   <font size="3" face="comic sans ms">
+                       <tr>
+                        <td>
+                            <b>Name : </b>
+                        </td>
+                        <td>
+                            <input type="text" name="name">
+                        </td>
+                   </tr>
+                   <tr>
+                        <td>
+                            <b>Email-ID:</b>
+                        </td>
+                        <td>
+                            <input type="email" name="email">
+                        </td>
+                   </tr>
+                   <tr>
+                        <td>
+                            <b>Contact No:</b>
+                        </td>
+                        <td>
+                            <input type="text" name="phone">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Feedback :</b>
+                        </td>
+                        <td>
+                            <textarea name="feed" rows="5" cols="40"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" onclick="save();" value="Submit">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="reset"  value="Reset">
+                        </td>
+                    </tr>
+                </table>
+                </font>
+            </form>
+        <br><br>
+        <footer>
+            BEWARE OF FAKE MOBILE CALLS FROM MIDDLEMEN AND OTHER PERSONS<BR>
+            PRETENDING TO BE FROM OUR COMPANY<br>
+            [ Last Update on 22th Feburary, 2020 ]
+        </footer>
+    </body>
+     <script>
+        function save()
+        {
+            alert("Thanks for your feedback" );
+            
+        }
+    </script>
+</html>

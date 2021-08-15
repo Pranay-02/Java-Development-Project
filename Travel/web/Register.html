@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<HTML>
+<HEAD>
+<TITLE> Registration Page</TITLE>
+<link type="text/css" rel="stylesheet" href="style1.css">
+</HEAD>
+<BODY>
+<HEADER><CENTER>BHARAT DEKHO</CENTER></HEADER>
+<HR size="3" align="left" width="100%" color="black">
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="Contact.jsp">Contact Us</a>
+  <a href="About_us.jsp">About Us</a>
+  <div class="dropdown">
+    <button class="dropbtn">Sign In 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Login.html">User Login</a>
+      <a href="Register.html">User Registration</a>
+      <a href="Admin_login.html">Admin Login</a>
+    </div>
+  </div> 
+
+  <div class="dropdown">
+    <button class="dropbtn">Have a Look 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Goa.html">Goa Dekho</a>
+      <a href="Himachal.html">Himachal Dekho</a>
+      <a href="Kerala.html">Kerala Dekho</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Feedback/Complain 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Feedback.html">FeedBack</a>
+      <a href="Complain.html">Complain</a>
+    </div>
+  </div> 
+    <div class="dropdown">
+    <button class="dropbtn">Packages 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Adventure.jsp">Adventure Packages</a>
+      <a href="PakageBook.html">Book a Package</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Hotels
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="HotelBook.jsp">Book a Hotel</a>
+      <a href="PGrates.jsp">Prices </a>
+      <a href="hotel_faqs.jsp">FAQs about Hotels</a>
+    </div>
+  </div> 
+</div>
+<HR size="3" align="left" width="100%" color="black">
+<br><br>
+<center><b><font size="6" color="Blue" face="comic sans ms" >REGISTRATION</font></B></CENTER>
+<br><br>
+               <form action="Reg_form" method="POST">
+            <center>
+                   <p size="3">Please fill the detail given below !!!!</p>
+                   <table border="3" width="50%" cellpadding="5" style="text-align: center">
+                   <tr>
+                        <td>
+                            <b>User Name:</b>
+                        </td>
+                        <td>
+                            <input type="text" name="uname">
+                        </td>
+                   </tr>
+                   <tr>
+                        <td>
+                            <b>Email-ID:</b>
+                        </td>
+                        <td>
+                            <input type="email" name="uemail">
+                        </td>
+                   </tr>
+                   <tr>
+                        <td>
+                            <b>Create Password:</b>
+                        </td>
+                        <td>
+                            <input type="password" name="upass">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>DOB</b>(yyyy-mm-dd)
+                        </td>
+                        <td>
+                            <input type="date" name="udate">
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td rowspan="2">
+                            <b>Gender:</b>                       
+                        </td>
+                    <td>
+                            <input type="radio" name="ugender" value="Male">Male
+                        </td>
+                    </tr>
+                    <tr>  
+                        <td>
+                            <input type="radio" name="ugender" value="Female">Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Contact No:</b>
+                        </td>
+                        <td>
+                            <input type="text" name="uphone">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Country:</b>
+                        </td>
+                        <td>
+                            <input type="text" name="cou">
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td>
+                            <input type="submit" onclick="save();" value="SignUp">
+                        </td>
+                        <td>
+                            <input type="reset"  value="Reset">
+                        </td>
+                    </tr>
+                </table>
+            </center>
+        </form>
+<br><br>
+<footer>
+    BEWARE OF FAKE MOBILE CALLS FROM MIDDLEMEN AND OTHER PERSONS<BR>
+    PRETENDING TO BE FROM OUR COMPANY<br>
+    [ Last Update on 22th Feburary, 2020 ]
+</footer>
+</BODY>
+<script>
+        function save()
+        {
+            alert("Data successfully saved");
+        }
+    </script>
+</HTML>
